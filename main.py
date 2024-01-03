@@ -29,7 +29,7 @@ def ageChecker():
     print("I'm joking, hahaha!")
 
 def display_options():
-  print(f"What would you like to do, {user_name}?")
+  print(f"How can I be of service, {user_name}?")
   time.sleep(1)
   print("1 - Tell me more about this company")
   print("2 - Tell me more about you")
@@ -40,13 +40,25 @@ def display_options():
 def user_selection():
   user_select = input("Enter a number between 1 and 5 here... ")
   if user_select == "1":
-    print("PLACEHOLDER")
+    print("This company helps people learn how to make chatbots like me!")
+    time.sleep(2)
+    user_selection()
   elif user_select == "2":
-    print("PLACEHOLDER 2")
+    print("More about me?")
+    time.sleep(2)
+    print(f"Well, {user_name}, I personally enjoy hiking, cooking, taking photos of nature, hanging out with friends--")
+    time.sleep(1)
+    print("Oops! I guess I started rambling a bit...")
+    time.sleep(2)
+    user_selection()
   elif user_select == "3":
-    print("PLACEHOLDER 3")
+    print("From Monday to Friday, 9:00 AM to 5:00 PM.")
+    time.sleep(2)
+    user_selection()
   elif user_select == "4":
-    print("PLACEHOLDER 4")
+    print("We are not currently hiring at this time. Sorry!")
+    time.sleep(2)
+    user_selection()
   elif user_select == "5":
     print(f"Thanks for using me, {user_name}! See you again soon!")
   else:
